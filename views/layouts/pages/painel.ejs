@@ -1,0 +1,15 @@
+<% layout('../layouts/main') -%>
+<% var title = 'Painel do Usuário' -%>
+
+<h2>Painel do Agente: <%= user.username %></h2>
+<p>Bem-vindo à sua área restrita.</p>
+
+<% if (user.is_admin) { %>
+    <h3>Ferramentas de Administrador</h3>
+    <ul>
+        <li><a href="#">Gerenciar Notícias</a></li>
+        <li><a href="#">Gerenciar Usuários</a></li>
+    </ul>
+<% } else { %>
+    <p>Em breve, mais funcionalidades para você!</p>
+<% } %>
