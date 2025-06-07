@@ -1,0 +1,10 @@
+body { font-family: sans-serif; background-color: #f4f4f4; color: #333; margin: 0; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+header { background-color: #333; color: white; padding: 10px 0; }
+header a { color: white; text-decoration: none; }
+header .container { display: flex; justify-content: space-between; align-items: center; }
+nav span { margin-right: 15px; }
+.form-box { background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.form-box input { display: block; width: 95%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; }
+.form-box button { background: #333; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+footer { text-align: center; margin-top: 40px; color: #777; }
