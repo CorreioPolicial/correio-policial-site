@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O título será definido por cada página -->
+    <title><%= typeof title !== 'undefined' ? title : 'Correio Policial' %> - Correio Policial</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="/">Correio Policial</a></h1>
+            <nav>
+                <% if (typeof user !== 'undefined' && user) { %>
+                    <span>Olá, <%= user.username %>!</span>
+                    <a href="/painel">Meu Painel</a>
+                    <a href="/logout">Sair</a>
+                <% } else { %>
+                    <a href="/login">Login</a>
+                    <a href="/register">Cadastre-se</a>
+                <% } %>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- O conteúdo de cada página será injetado aqui -->
+        <%- body %>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2024 Correio Policial. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js" defer></script>
+</body>
+</html>
