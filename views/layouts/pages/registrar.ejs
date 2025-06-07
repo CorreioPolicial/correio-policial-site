@@ -1,0 +1,11 @@
+<% layout('../layouts/main') -%>
+<% var title = 'Cadastro' -%>
+
+<h2>Crie sua Conta de Agente</h2>
+<form action="/register" method="POST" class="form-box">
+    <label for="username">Nome de Usuário:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Cadastrar</button>
+</form>
